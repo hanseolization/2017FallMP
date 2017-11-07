@@ -4,8 +4,11 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-    <p>
-        하 헷갈린다
-    </p>
+<ion-content>
+    <ion-list>
+        <button ion-item *ngFor="let a of arr">
+            <ion-icon type="star"></ion-icon>
+            {{a}}
+        </button>
+    </ion-list>
 </ion-content>
